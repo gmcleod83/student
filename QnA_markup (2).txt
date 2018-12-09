@@ -1,0 +1,205 @@
+Title: McLeod Legal Group, LLC
+Author: Gordon McLeod
+Description:
+
+Q(1): Do you have a legal Issue
+A:yes 
+	Q(1.1):What type of legal issue do you have?
+	A:Criminal Law
+		Q(1.1.1):Where you arrested?
+		A:Yes
+			Q(1.1.1.1):What did you get arrested for?
+			A: Operating Under the Influence of Liquor or Drugs
+				Q(1.1.1.1.1):Did you submit to the breathlyzer?
+				A:Yes
+					Q(1.1.1.1.1.1):Did you register over a .08?
+					A:Yes
+						Q(1.1.1.1.1.1.1):Did you perform field sobriety tests?
+						A:Yes
+							Q(1.1.1.1.1.1.1.1):It appears you may need assistance, move to the next step?
+							A:Yes
+								Q(1.1.1.1.1.1.1.1.1):GOTO:4
+							A:No
+						A:No
+					A:No
+						Q(1.1.1.1.1.1.2):Did you perform Field Sobriety Tests?
+						A:Yes
+							Q(1.1.1.1.1.1.2.1):It appears you may need legal assistance, move to the next step?
+							A:Yes
+								Q(1.1.1.1.1.1.2.1.1):GOTO:4
+							A:No
+								Q(1.1.1.1.1.1.2.1.2):GOTO:2
+						A:No
+				A:No
+					Q(1.1.1.1.1.2):Did you perform field sobriety test?
+					A:Yes
+						Q(1.1.1.1.1.2.1):It appears you may need legal assistance, move to the next step?
+						A:Yes
+							Q(1.1.1.1.1.2.1.1):GOTO:4
+						A:No
+					A:No
+						Q(1.1.1.1.1.2.2):GOTO:2
+			A:Possession of a firearm or other firearm related charges
+				Q(1.1.1.1.2):Do you have an FID Card
+				A:Yes
+					Q(1.1.1.1.2.1):GOTO:2
+				A:No
+					Q(1.1.1.1.2.2):It appears you may need legal assistance, Continue?
+					A:Yes
+						Q(1.1.1.1.2.2.1):GOTO:4
+					A:No
+						Q(1.1.1.1.2.2.2):GOTO:3
+			A:Assault & Battery
+				Q(1.1.1.1.3):Do live with the victim in the case?
+				A:Yes
+					Q(1.1.1.1.3.1):It appears you may need legal assistance, Continue?
+					A:Yes
+						Q(1.1.1.1.3.1.1):GOTO:4
+					A:No
+						Q(1.1.1.1.3.1.2):GOTO:3
+				A:No
+					Q(1.1.1.1.3.2):It appears you may need legal assistance, Continue?
+					A:Yes
+						Q(1.1.1.1.3.2.1):GOTO:4
+					A:No
+						Q(1.1.1.1.3.2.2):GOTO:3
+			A:Possession of Distribution of drugs
+				Q(1.1.1.1.4):What types of drugs were found on your person?
+				A:Class A
+					Q(1.1.1.1.4.1):It appears you have a legal issue, Continue?
+					A:Yes
+						Q(1.1.1.1.4.1.1):GOTO:4
+					A:No
+						Q(1.1.1.1.4.1.2):GOTO:3
+				A:Class B
+					Q(1.1.1.1.4.2):It appears you have a legal issue, Continue?
+					A:Yes
+						Q(1.1.1.1.4.2.1):GOTO:4
+					A:No
+						Q(1.1.1.1.4.2.2):GOTO:3					
+				A:Class C
+					Q(1.1.1.1.4.3):It appears you have a legal issue, Continue?
+					A:Yes
+						Q(1.1.1.1.4.3.1):GOTO:4
+					A:No
+						Q(1.1.1.1.4.3.2):GOTO:3	
+				A:Class E
+					Q(1.1.1.1.4.4):Did you have a prescription for these drugs?
+					A:Yes
+						Q(1.1.1.1.4.4.1):GOTO:2
+					A:No
+						Q(1.1.1.1.4.4.2):It appears you have a legal issue, Continue?
+						A:Yes
+							Q(1.1.1.1.4.4.2.1):GOTO:4
+						A:No
+							Q(1.1.1.1.4.4.2.2):GOTO:3
+			A:Other
+				Q(1.1.1.1.5):GOTO:2
+		A:No
+			Q(1.1.1.2):Did a police officer issue a citation for a motor vehicle infraction or Summonsed to court?
+			A:Yes
+				Q(1.1.1.2.1): Do you want to continue to the next step?
+				A:Yes
+					Q(1.1.1.2.1.1): GOTO:4
+				A:No
+			A:No
+				Q(1.1.1.2.2):GOTO:3
+	A:Divorce/Child Custody
+		Q(1.1.2):It appears you may have a legal issue, Continue?
+		A:Yes
+			Q(1.1.2.1):GOTO:4
+		A:No
+			Q(1.1.2.2):GOTO:2
+	A:Real Estate Planning
+		Q(1.1.3):It appears our office can assist you, continue?
+		A:Yes
+			Q(1.1.3.1):GOTO:4
+		A:No
+			Q(1.1.3.2):GOTO:2
+	A:Land Use & Zoning
+		Q(1.1.4):It appears that our office can assist you, continue?
+		A:Yes
+			Q(1.1.4.1):GOTO:4
+		A:No
+			Q(1.1.4.2):GOTO:2
+	A:Landlord/Tenant Dispute
+		Q(1.1.5):It appears you may have a legal issue. continue?
+		A:Yes
+			Q(1.1.5.1):GOTO:4
+		A:No
+			Q(1.1.5.2):GOTO:2
+	A:Wrongful Death
+		Q(1.1.6):It appears you have a legal issue, continue?
+		A:Yes
+			Q(1.1.6.1):GOTO:4
+		A:No
+			Q(1.1.6.2):GOTO:2
+	A:Wills & Trusts
+		Q(1.1.7):It appears that we can help you, continue?
+		A:Yes
+			Q(1.1.7.1):GOTO:4
+		A:No
+			Q(1.1.7.2):GOTO:2	
+	
+A:No
+	Q(1.2):GOTO:3
+Q(2):Please give our office a call so our office can assist you better.
+A:617-012-2018
+Q(3):It appears that you do not need or want a legal assistance.  Please feel free to call McLeod Legal Group in the future.
+A:617-012-2018
+Q(4):Will you answer questions regarding your finances?
+A:Yes
+	Q(4.1):GOTO:5
+A:No
+	Q(4.2):GOTO:2
+Q(5):Do you live in Suffolk, Norfolk, or Plymouth County in Massachusetts?
+A:Yes
+	Q(5.1):Do you make an annual income between $0-$30,000
+	A:Yes
+		Q(5.1.1):How many children do you have?
+		A:0-2
+			Q(5.1.1.1):Are you married?
+			A:Yes
+				Q(5.1.1.1.1):Does your spouse work?
+				A:Yes
+					Q(5.1.1.1.1.1):Does your spouse make an annual income between $0-$30,000?
+					A:Yes
+						Q(5.1.1.1.1.1.1):GOTO:6
+					A:No
+						Q(5.1.1.1.1.1.2):GOTO:2
+				A:No
+					Q(5.1.1.1.1.2):GOTO:6
+			A:No
+				Q(5.1.1.1.2):GOTO:7
+		A:3-5
+			Q(5.1.1.2):Are you married?
+			A:Yes
+				Q(5.1.1.2.1):Does your spouse work?
+				A:Yes
+					Q(5.1.1.2.1.1):Does your spouse make an annual salary between $0-$30,000?
+					A:Yes
+						Q(5.1.1.2.1.1.1):GOTO:6
+					A:No
+						Q(5.1.1.2.1.1.2):GOTO:7
+				A:No
+					Q(5.1.1.2.1.2):GOTO:6
+			A:No
+				Q(5.1.1.2.2):GOTO:6
+		A:5+
+			Q(5.1.1.3):Are you married?
+			A:Yes
+				Q(5.1.1.3.1):Does you spouse make an annual salary between $0-$30,000
+				A:Yes
+					Q(5.1.1.3.1.1):GOTO:6
+				A:No
+					Q(5.1.1.3.1.2):GOTO:2
+			A:No
+				Q(5.1.1.3.2):GOTO:6
+	A:No
+		Q(5.1.2):GOTO:7
+A:No
+	Q(5.2):GOTO:2
+Q(6):You qualify, please call our office to set up an appointment to discuss your representation. 
+A:617-012-2018 
+Q(7):You do not qualify based on your income, Please feel free to call our office to discuss this further.  
+A:617-012-2018
